@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Confirmación de envío de formulario</title>
+
+
+    <script>
+        function pregunta() {
+            if (confirm('¿Estas seguro de enviar este formulario?')) 
+            {
+                document.tuformulario.submit()
+            }
+            else{
+                console.log("muy mal")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name=tuformulario action="http://www.desarrolloweb.com">
+        <input type="text" name="cualquiercampo">
+        <input type=button onclick="pregunta()" value="Enviar">
+    </form>
+
+</body>
+
+</html>
