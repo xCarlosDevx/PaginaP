@@ -26,7 +26,10 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
 
     <link rel="stylesheet" href="../CSS/Cajas4.css">
     <link rel="stylesheet" href="../CSS/EstilosBase.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/templatemo-style.css" />
     <title>Cooking Shop</title>
 
 </head>
@@ -43,23 +46,51 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
         }
     }
 </script>
-
-<header class="header">
-    <div class="container logo-nav-container">
-        <a href="#" class="logo">Cooking Shop </a>
-        <span class="menu-icon">Ver menú</span>
-
-        <nav class="navigation">
-            <ul class="show">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Categorias.html">Categorias</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Contáctanos.html">Contáctanos</a></li>
-                <li><a href="Empleados.php">Empleados</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+            <div class="tm-brand-texts">
+              <h1 class="text-uppercase tm-brand-name">CookingShop</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="../frontend/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="../frontend/Menu.html">Ordenar</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="../frontend/Contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="../login.php">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
 
 <style>
     table.dataTable thead {

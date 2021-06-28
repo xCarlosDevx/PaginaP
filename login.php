@@ -12,7 +12,7 @@ include('HTML/basesDeDatos/conexion2.php');
         
         $usuario = $_POST['usuario'];
         $clave = $_POST['clave'];
-       
+        $clave = hash('sha512', $clave);
         $statement =$conexion->prepare("SELECT * FROM usuarios WHERE Nombre_Usuario = :usuario AND Contraseña = :clave");
         
         $statement->execute(array(
@@ -27,14 +27,14 @@ include('HTML/basesDeDatos/conexion2.php');
             header('location: HTML/empleados.php');
         }else
         if ($resultado['Tipo_Usuario'] == 2) {
-            header('location: HTML/index.php');
+            header('location: frontend/index.html');
            
         }else
         if ($resultado['Tipo_Usuario'] == 3) {
-            header('location: ../CSS/EstilosBase    .css');
+            header('location:  ');
            
         }else{
-            $error .= '<i>Este usuario no existe</i>';
+            $error .= '<i>Este usuario no existe o contraseña incorrecta</i>';
         }
     }
         
