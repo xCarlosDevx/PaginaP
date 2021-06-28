@@ -38,7 +38,7 @@ include('HTML/basesDeDatos/conexion2.php');
         }
     }
         
-require 'frontend/login-vista.php';
+require 'frontend/login-vista.html';
 
 
 ?>
