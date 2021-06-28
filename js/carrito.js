@@ -8,7 +8,6 @@ class Carrito {
             const producto = e.target.parentElement;
             //Enviamos el producto seleccionado para tomar sus datos
             this.leerDatosProducto(producto);
-         
         }
     }
 
@@ -31,7 +30,7 @@ class Carrito {
 
         if (productosLS === infoProducto.id) {
 
-             Swal.fire({
+            Swal.fire({
                 title: 'Oops...',
                 text: 'El producto ya está agregado',
                 showConfirmButton: false,
@@ -61,14 +60,6 @@ class Carrito {
             </td>
          
         `;
-
-        Swal.fire({
-            title: 'Listo...',
-            text: 'Producto agregado',
-            showConfirmButton: false,
-            timer: 1000
-        })
-
         listaProductos.appendChild(row);
         this.guardarProductosLocalStorage(producto); 
     }
