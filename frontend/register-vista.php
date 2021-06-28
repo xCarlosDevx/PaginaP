@@ -8,7 +8,7 @@
     
     
     <link rel="stylesheet" href="icon/style.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
 </head>
 <body>
