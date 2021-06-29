@@ -53,7 +53,16 @@ include('HTML/basesDeDatos/conexion2.php');
                 
             ));
             
-            $error .= '<i style="color: green;">Usuario registrado exitosamente</i>';
+            $error .= 
+                <script>
+                    Swal.fire({
+            title: 'Listo...',
+            text: 'Producto agregado',
+            showConfirmButton: false,
+            timer: 1000
+        })
+                </script>
+                ;
         }
     }
 
