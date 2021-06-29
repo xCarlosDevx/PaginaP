@@ -176,7 +176,7 @@ class Carrito {
 
     //Eliminar todos los datos del LS
     vaciarLocalStorage() {
-        localStorage.clear();
+        localStorage.removeItem(productos);
     }
 
     //Procesar pedido
