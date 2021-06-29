@@ -60,6 +60,12 @@ class Carrito {
             </td>
          
         `;
+            Swal.fire({
+            title: 'Listo...',
+            text: 'Producto agregado',
+            showConfirmButton: false,
+            timer: 1000
+        })
         listaProductos.appendChild(row);
         this.guardarProductosLocalStorage(producto); 
     }
