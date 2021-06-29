@@ -3,7 +3,7 @@ const listaCompra = document.querySelector("#lista-compra tbody");
 const carrito = document.getElementById('carrito');
 const procesarCompraBtn = document.getElementById('procesar-compra');
 const cliente = document.getElementById('cliente');
-const correo = document.getElementById('correo');
+const direccion = document.getElementById('direccion');
 const redirect = 0;
 
 cargarEventos();
@@ -40,7 +40,7 @@ function procesarCompra() {
             showConfirmButton: false,
             timer: 2000
         })
-    } else if (cliente.value === '' || correo.value === '') {
+    } else if (cliente.value === '' || direccion.value === '') {
         Swal.fire({
             title: 'Oops...',
             text: 'Ingrese todos los campos requeridos',
