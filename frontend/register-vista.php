@@ -38,7 +38,7 @@
             </div>
             <div class="user line-input">
                 <label class="lnr lnr-user"></label>
-                <input type="text" placeholder="Nombre Usuario" name="usuario">
+                <input type="text" placeholder="Nombre de Usuario" name="usuario">
             </div>
             <div class="user line-input">
                 <label class="lnr lnr-envelope"></label>
