@@ -43,7 +43,7 @@ include('HTML/basesDeDatos/conexion2.php');
         
         if ($error == ''){
             $statement = $conexion->prepare('INSERT INTO usuarios (ID_Usuario,Nombre,Apellido,Nombre_Usuario,Correo,Contraseña,Tipo_Usuario) 
-            VALUES (null,:nombre,:apellido, :usuario, :correo, :clave,2)');
+            VALUES (null,:nombre,:apellido, :usuario, :correo, :clave,1)');
             $statement->execute(array(
                 ':nombre' => $nombre,
                 ':apellido' => $apellido,
