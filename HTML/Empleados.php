@@ -54,42 +54,7 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-2 tm-nav-col">
-          <div class="tm-nav">
-            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mr-0">
-                  <li class="nav-item">
-                    <div class="tm-nav-link-highlight"></div>
-                    <a class="nav-link" href="../frontend/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="tm-nav-link-highlight"></div>
-                    <a class="nav-link" href="../frontend/Menu.html">Ordenar</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="tm-nav-link-highlight"></div>
-                    <a class="nav-link" href="../frontend/Contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="tm-nav-link-highlight"></div>
-                    <a class="nav-link" href="../login.php">Login</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
+      
       </div>
 
 <style>
@@ -106,7 +71,7 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
         <div align="right">
             <a href="../actions/logout.php" class="btn btn-danger" id="log_out">Cerrar Sesion &nbsp </a>
         </div>
-        <div class="container1" id='container1'>
+        <div class="container1" id='container1' style="display:none;">
             <h1 class="text-center">Listado de Empleados</h1>
             <div class="row">
                 <div class="col-lg-12">
@@ -307,7 +272,7 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
 
                 </div>
             </div>
-            <div class="contenido " id="contenido3">
+            <div class="contenido " id="contenido3" >
                 <style>
                     .input {
                         margin-right: 10px;
@@ -343,7 +308,7 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
 
         </div>
 
-        <div class="container3" id='container3'>
+        <div class="container3" id='container3' style="display:none;">
             <h1 class="text-center">Listado de Usuarios</h1>
             <div class="row">
                 <div class="col-lg-12">
@@ -453,8 +418,8 @@ $result3 = mysqli_query($conn, "SELECT* FROM usuarios where Tipo_Usuario ='2'");
             </div>
         </div>
 
-        <div class="container1">
-            <br>
+        <div class="container10">
+            <br> 
             <button id="btn1" class="btn btn-warning">Empleado </button>
             <button id="btn2" class="btn btn-warning">Pedidos </button>
             <button id="btn3" class="btn btn-warning">Usuarios </button>
