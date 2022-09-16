@@ -24,7 +24,7 @@ include('HTML/basesDeDatos/conexion2.php');
         
         if ($resultado !== false AND $resultado['Tipo_Usuario'] == 1){
             $_SESSION['Nombre_Usuario'] = $usuario;
-            header('location: HTML/empleados.php');
+            header('location: HTML/Empleados.php');
         }else
         if ($resultado['Tipo_Usuario'] == 2) {
             header('location: frontend/index.html');
